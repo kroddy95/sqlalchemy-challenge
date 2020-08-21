@@ -59,12 +59,9 @@ def prcp():
     prcp_list = []
     for date, prcp in results:
         prcp_dict = {}
-        # prcp_dict["date"] = date
-        # prcp_dict["prcp"] = prcp
         prcp_dict[date] = prcp
         prcp_list.append(prcp_dict)
 
-    # prcp_list = list(np.ravel(results))
     return jsonify(prcp_list)
 
 # Second Route
